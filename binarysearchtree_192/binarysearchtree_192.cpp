@@ -39,5 +39,5 @@ public:
 		Node* currentNode = NULL;
 		search(element, parent, currentNode); //Locate the node which will be the parents of the node to be inserted
 		if (parent == NULL) // if the parents is null (tree is empty)
-		{
+		{ 
 
