@@ -42,5 +42,12 @@ public:
 		if (parent == NULL) // if the parent is null (Tree is empty)
 		{
 			ROOT = newNode; // Mark the new as ROOt
+			return; // Exit
+		}
+
+		if (element < parent->info) // if the value in the data field of the new node is less than that of the parent
+		{
+			parent->leftchild = newNode; // make the left child of the parent point to the new node
+		}
 
 
