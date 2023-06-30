@@ -35,3 +35,9 @@ public:
 		newNode->leftchild = NULL; // Make the left child of the  new node point to NULL
 		newNode->rightchild = NULL; // Make the right child of the  new node point to NULL
 
+		Node* parent = NULL;
+		Node* currentNode = NULL;
+		search(element, parent, currentNode); //Locate the node which will be the parents of the node to be inserted
+		if (parent == NULL) // if the parents is null (tree is empty)
+		{
+
