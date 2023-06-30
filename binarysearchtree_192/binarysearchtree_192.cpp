@@ -71,3 +71,9 @@ public:
 		}
 	}
 
+	void inoder(Node* ptr)
+	{
+		if (ROOT == NULL)
+		{
+			cout << "Tree is empty" << endl;
+
