@@ -95,3 +95,10 @@ public:
 		}
 		if (ptr != NULL)
 		{
+			cout << ptr->info << " ";
+			preorder(ptr->leftchild);
+			preorder(ptr->rightchild);
+		}
+	}
+
+
