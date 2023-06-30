@@ -37,8 +37,8 @@ public:
 
 		Node* parent = NULL;
 		Node* currentNode = NULL;
-		search(element, parent, currentNode); //Locate the node which will be the parents of the node to be insertedif (parent == NULL) // if the parents is null (tree is empty)
-		
+		search(element, parent, currentNode); //Locaete the node which will be the parent of the node to be insserted
+
 		if (parent == NULL) // if the parent is null (Tree is empty)
 		{
 			ROOT = newNode; // Mark the new as ROOt
@@ -50,5 +50,14 @@ public:
 			parent->leftchild = newNode; // make the left child of the parent point to the new node
 		}
 		else if (element > parent->info) // if the value in the data field of the new node is greater than that of the parent
+		{
+			parent->rightchild = newNode;// Make the right child of the parent point to the new node
+		}
+	}
+
+
+	void search(string element, Node*& parent, Node*& currentNode)
+	{
+		//this function searches the currentNode of the specified Node as well as the current Node of Its parent
 
 
